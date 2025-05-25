@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Kicad projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="led-torch.css">
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar">
+            <div class="logo">My Portfolio</div>
+            <div class="hamburger">
+            <button class="menu-toggle" aria-label="Menu">&#9776;</button> </div>
+            <ul class="nav-links">
+                <li class="list nav-button"><a href="index.html">Home</a></li>
+                <li class="list nav-button">
+                    <button class="tech-button special-button">
+                        <a href="projects.html">Projects</a>
+                    </button>
+                </li>
+                <li class="list nav-button"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+<div class="schematic">
+
+<h2>4x8x8 LED Matrix Clock</h2>
+<p>
+
+    This project displays the current time using four 8×8 LED matrix displays driven by a microcontroller. It’s a visually engaging way to explore display control, real-time clocks, and I2C communication. Below, you can see the bill of materials, the schematic, PCB layout, and 3D model of the project.
+
+</p>
+</div>   
+<div class="schematic">
+<h3 class="photo-description">Bill of Materials</h3>
+   
+
+
+<table class="bom-table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Designator</th>
+      <th>Package</th>
+      <th>Quantity</th>
+      <th>Designation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>H1, H2, H3, H4</td>
+      <td>MountingHole:MountingHole_2.5mm</td>
+      <td>4</td>
+      <td>MountingHole</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>J1</td>
+      <td>PinHeader_1x05_P2.54mm_Vertical</td>
+      <td>1</td>
+      <td>LED1_IN</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>J2</td>
+      <td>BarrelJack_Horizontal</td>
+      <td>1</td>
+      <td>Barrel_Jack</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>J3</td>
+      <td>PinHeader_1x03_P2.54mm_Vertical</td>
+      <td>1</td>
+      <td>ICSP</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>J4</td>
+      <td>PinHeader_1x06_P2.54mm_Vertical</td>
+      <td>1</td>
+      <td>AVR_SPI_PRG_6</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>J5</td>
+      <td>PinHeader_1x02_P2.54mm_Vertical</td>
+      <td>1</td>
+      <td>AC_IN</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>J6</td>
+      <td>PinHeader_1x03_P2.54mm_Vertical</td>
+      <td>1</td>
+      <td>Relay_OUT</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>R4</td>
+      <td>Resistor_SMD:R_0805_2012Metric</td>
+      <td>1</td>
+      <td>330</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>R6</td>
+      <td>Resistor_SMD:R_0805_2012Metric</td>
+      <td>1</td>
+      <td>4.7k</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>RLY1</td>
+      <td>Relay_THT:Relay_SPDT_Omron_G5LE</td>
+      <td>1</td>
+      <td>G5LE-1</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>S1</td>
+      <td>SW_1825967-1</td>
+      <td>1</td>
+      <td>1825967-1</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>S3</td>
+      <td>SW_SS12D07VG4</td>
+      <td>1</td>
+      <td>SS12D07VG4</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+</div>
+
+<div class="schematic">
+            <h4 class="photo-description">Schematic Diagram of the 4x8x8 LED Matrix Clock</h4>
+            <img class="image-size111" src="./images/4x8x8 LED Matrix Clock1.PNG" alt="schematic">
+        </div>
+        <div class="schematic">
+            <h4 class="photo-description">PCB Layout of the 4x8x8 LED Matrix Clock</h4>
+            <img class="image-size3" src="./images/4x8x8 LED Matrix Clock2.PNG" alt="layout">
+        </div>
+        <div class="schematic">
+            <h4 class="photo-description">3D View (Front) of the Assembled 4x8x8 LED Matrix Clock</h4>
+        <div class="front-3dmodel">
+            <img class="image-size3" src="./images/4x8x8 LED Matrix Clock3.PNG" alt="front-3dmodel">
+        </div>
+        <h4 class="photo-description">3D View (Back) of the Assembled 4x8x8 LED Matrix Clock</h4>
+        <div class="back-3dmodel">
+            <img class="image-size3" src="./images/4x8x8 LED Matrix Clock4.PNG" alt="back-3dmodel">
+        </div>
+    </div>
+
+
+    <div style="display: flex; justify-content: space-between; margin-top: 2rem;">
+        <button class=" tech-button special-button">
+       
+        <a href="index.html" style="align-self: flex-start; text-decoration: none; color: white;">← Back to Projects</a>  </button>
+        
+        <button class=" tech-button special-button"  > <a href="https://github.com/taulant0/4x8x8-LED-Matrix-Clock/raw/main/downloads/4x8x8 LED Matrix Clock.zip" style="text-decoration: none; color: white; " download>Download project</a></button>
+
+      
+
+      </div>
+      
+
+    </main>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="https://github.com/taulant0" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/taulant-shala-5b8131334/" target="_blank">LinkedIn</a>
+            
+            </div>
+            <div class="footer-copy">
+                &copy; <span id="current-year"></span> Taulant Shala. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    
+<script>
+
+
+document.addEventListener('DOMContentLoaded', function () {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navbar = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navbar.classList.toggle('active'); // Toggle the active class
+        });
+    });
+    </script>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Kicad projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="led-torch.css">
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar">
+            <div class="logo">My Portfolio</div>
+            <div class="hamburger">
+            <button class="menu-toggle" aria-label="Menu">&#9776;</button> </div>
+            <ul class="nav-links">
+                <li class="list nav-button"><a href="index.html">Home</a></li>
+                <li class="list nav-button">
+                    <button class="tech-button special-button">
+                        <a href="projects.html">Projects</a>
+                    </button>
+                </li>
+                <li class="list nav-button"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+<div class="schematic">
+
+<h2> ESP32 Clone Devkit</h2>
+<p>
+
+This custom development board is built around the ESP32 chip and designed for wireless IoT applications. It covers RF design basics and USB-to-serial integration for easy programming. The board includes a microSD card interface for data logging, allowing sensor data to be stored for later analysis. Resources include the bill of materials, schematic, PCB layout, and 3D model.
+
+</p>
+</div>   
+<div class="schematic">
+<h3 class="photo-description">Bill of Materials</h3>
+  
+
+
+<table class="bom-table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Designator</th>
+      <th>Package</th>
+      <th>Quantity</th>
+      <th>Designation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>C1, C3</td><td>Capacitor_SMD:C_0201_0603Metric</td><td>2</td><td>22uF, 10V (20%)</td></tr>
+    <tr><td>2</td><td>C9, C14, C19</td><td>Capacitor_SMD:C_01005_0402Metric</td><td>3</td><td>0.1uF, 50V (10%)</td></tr>
+    <tr><td>3</td><td>C15</td><td>Capacitor_SMD:C_01005_0402Metric</td><td>1</td><td>22uF, 10V (20%) (NC)</td></tr>
+    <tr><td>4</td><td>C20</td><td>Capacitor_SMD:C_01005_0402Metric</td><td>1</td><td>4.7uF, 6.3V (10%)</td></tr>
+    <tr><td>5</td><td>C21</td><td>Capacitor_SMD:C_01005_0402Metric</td><td>1</td><td>22uF, 10V (20%)</td></tr>
+    <tr><td>6</td><td>C22</td><td>Capacitor_SMD:C_01005_0402Metric</td><td>1</td><td>0.1uF, 50V (10%)</td></tr>
+    <tr><td>7</td><td>D1</td><td>LED_SMD:LED_0603_1608Metric</td><td>1</td><td>RED LED</td></tr>
+    <tr><td>8</td><td>D3</td><td>Diode_SMD:D_SOD-323</td><td>1</td><td>Schottky Diode</td></tr>
+    <tr><td>9</td><td>D4, D5, D6</td><td>Diode_SMD:D_SOD-523</td><td>3</td><td>TVS Diode</td></tr>
+    <tr><td>10</td><td>J1</td><td>Connector_USB:USB_Micro-AB</td><td>1</td><td>USB Micro-B Connector</td></tr>
+    <tr><td>11</td><td>J2, J3</td><td>Connector_PinHeader_2.54mm</td><td>2</td><td>1x19 Pin Header Male</td></tr>
+    <tr><td>12</td><td>MOD1</td><td>digikey-footprints:ESP32-WROOM-32D</td><td>1</td><td>ESP32-WROOM-32</td></tr>
+    <tr><td>13</td><td>Q1, Q2</td><td>SOT-23-3</td><td>2</td><td>MMSS8050-H-TP NPN Transistor</td></tr>
+    <tr><td>14</td><td>R2, R24</td><td>Resistor_SMD:R_01005_0402Metric</td><td>2</td><td>2K Ohm (5%)</td></tr>
+    <tr><td>15</td><td>R11, R21, R22</td><td>Resistor_SMD:R_01005_0402Metric</td><td>3</td><td>10K Ohm (5%)</td></tr>
+    <tr><td>16</td><td>R17, R18</td><td>Resistor_SMD:R_01005_0402Metric</td><td>2</td><td>0 Ohm (5%)</td></tr>
+    <tr><td>17</td><td>R23</td><td>Resistor_SMD:R_01005_0402Metric</td><td>1</td><td>10K Ohm (5%) (NC)</td></tr>
+    <tr><td>18</td><td>R25</td><td>Resistor_SMD:R_01005_0402Metric</td><td>1</td><td>22.1K Ohm (5%)</td></tr>
+    <tr><td>19</td><td>R26</td><td>Resistor_SMD:R_01005_0402Metric</td><td>1</td><td>47.5K Ohm (5%)</td></tr>
+    <tr><td>20</td><td>SW1, SW2</td><td>Button_Switch_SMD:SW_SPST_B3S-1000</td><td>2</td><td>Push Button Switch</td></tr>
+    <tr><td>21</td><td>U1</td><td>QFN-28 (5x5 mm)</td><td>1</td><td>CP2102N-A01-GQFN28 USB-UART Bridge</td></tr>
+    <tr><td>22</td><td>U2</td><td>SOT-223-3</td><td>1</td><td>AMS1117-3.3 Voltage Regulator</td></tr>
+  </tbody>
+</table>
+
+
+
+
+</div>
+
+<div class="schematic">
+            <h4 class="photo-description">Schematic Diagram of the ESP32 Clone Devkit</h4>
+            <img class="image-size111" src="./images/ESP32 Clone Devkit1.PNG" alt="schematic">
+        </div>
+        <div class="schematic">
+            <h4 class="photo-description">PCB Layout of the ESP32 Clone Devkit</h4>
+            <img class="image-size3" src="./images/ESP32 Clone Devkit2.PNG" alt="layout">
+        </div>
+        <div class="schematic">
+            <h4 class="photo-description">3D View (Front) of the Assembled ESP32 Clone Devkit</h4>
+        <div class="front-3dmodel">
+            <img class="image-size3" src="./images/ESP32 Clone Devkit3.PNG" alt="front-3dmodel">
+        </div>
+        <h4 class="photo-description">3D View (Back) of the Assembled ESP32 Clone Devkit</h4>
+        <div class="back-3dmodel">
+            <img class="image-size3" src="./images/ESP32 Clone Devkit4.PNG" alt="back-3dmodel">
+        </div>
+    </div>
+
+
+    <div style="display: flex; justify-content: space-between; margin-top: 2rem;">
+        <button class=" tech-button special-button">
+       
+        <a href="index.html" style="align-self: flex-start; text-decoration: none; color: white;">← Back to Projects</a>  </button>
+        
+        <button class=" tech-button special-button"  > <a href="https://github.com/taulant0/ESP32-Clone-Devkit/raw/main/downloads/ESP32 Clone Devkit.zip" style="text-decoration: none; color: white; " download>Download project</a></button>
+
+      
+
+      </div>
+      
+
+    </main>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="https://github.com/taulant0" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/taulant-shala-5b8131334/" target="_blank">LinkedIn</a>
+            
+            </div>
+            <div class="footer-copy">
+                &copy; <span id="current-year"></span> Taulant Shala. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    
+<script>
+
+
+document.addEventListener('DOMContentLoaded', function () {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navbar = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navbar.classList.toggle('active'); // Toggle the active class
+        });
+    });
+    </script>
+
+
+
+
+
+
+</body>
+</html>

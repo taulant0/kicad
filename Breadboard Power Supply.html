@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Kicad projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="led-torch.css">
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar">
+            <div class="logo">My Portfolio</div>
+            <div class="hamburger">
+            <button class="menu-toggle" aria-label="Menu">&#9776;</button> </div>
+            <ul class="nav-links">
+                <li class="list nav-button"><a href="index.html">Home</a></li>
+                <li class="list nav-button">
+                    <button class="tech-button special-button">
+                        <a href="projects.html">Projects</a>
+                    </button>
+                </li>
+                <li class="list nav-button"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+<div class="schematic">
+
+<h2>Breadboard Power Supply</h2>
+<p>
+
+This project is a compact power supply that plugs directly into a breadboard and provides both 3.3V and 5V regulated outputs. It’s a practical tool for powering small electronic circuits and is ideal for anyone working with microcontrollers or sensors. Below, you can see the bill of materials, schematic, PCB layout, and 3D model of the project.
+
+</p>
+</div>   
+<div class="schematic">
+<h3 class="photo-description">Bill of Materials</h3>
+  
+
+
+
+<table class="bom-table">
+  <tr>
+    <th>ID</th>
+    <th>Designator</th>
+    <th>Package</th>
+    <th>Quantity</th>
+    <th>Designation</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>C1</td>
+    <td>Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm</td>
+    <td>1</td>
+    <td>10u</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>C2</td>
+    <td>Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm</td>
+    <td>1</td>
+    <td>1u</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>C3</td>
+    <td>Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm</td>
+    <td>1</td>
+    <td>0.1u</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>D1</td>
+    <td>LED_THT:LED_D5.0mm</td>
+    <td>1</td>
+    <td>LED</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>J1</td>
+    <td>Connector_BarrelJack:BarrelJack_Horizontal</td>
+    <td>1</td>
+    <td>Barrel_Jack_Switch</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>J2, J5</td>
+    <td>TerminalBlock:TerminalBlock_bornier-2_P5.08mm</td>
+    <td>2</td>
+    <td>Screw_Terminal_01x02</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>J3, J7</td>
+    <td>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</td>
+    <td>2</td>
+    <td>Conn_01x03_Male</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>J4, J6</td>
+    <td>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</td>
+    <td>2</td>
+    <td>Conn_01x02_Male</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>R1, R2</td>
+    <td>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal</td>
+    <td>2</td>
+    <td>330</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>R3</td>
+    <td>Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal</td>
+    <td>1</td>
+    <td>560</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>S1</td>
+    <td>digikey-footprints:Switch_Slide_11.6x4mm_EG1218</td>
+    <td>1</td>
+    <td>EG1218</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>U1</td>
+    <td>Package_TO_SOT_THT:TO-220-3_Vertical</td>
+    <td>1</td>
+    <td>LM317_TO-220</td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>U2</td>
+    <td>Package_TO_SOT_THT:TO-220-3_Vertical</td>
+    <td>1</td>
+    <td>LM7805_TO220</td>
+  </tr>
+</table>
+
+
+
+
+</div>
+
+<div class="schematic">
+            <h4 class="photo-description">Schematic Diagram of the Breadboard Power Supply</h4>
+            <img class="image-size11" src="./images/breadboard.PNG" alt="schematic">
+        </div>
+        <div class="schematic">
+            <h4 class="photo-description">PCB Layout of the Breadboard Power Supply</h4>
+            <img class="image-size2" src="./images/breadboard1.PNG" alt="layout">
+        </div>
+        <div class="schematic">
+            <h4 class="photo-description">3D View (Front) of the Assembled Breadboard Power Supply</h4>
+        <div class="front-3dmodel">
+            <img class="image-size2" src="./images/breadboard2.PNG" alt="front-3dmodel">
+        </div>
+        <h4 class="photo-description">3D View (Back) of the Assembled Breadboard Power Supply</h4>
+        <div class="back-3dmodel">
+            <img class="image-size2" src="./images/breadboard3.PNG" alt="back-3dmodel">
+        </div>
+    </div>
+
+
+    <div style="display: flex; justify-content: space-between; margin-top: 2rem;">
+        <button class=" tech-button special-button">
+       
+        <a href="index.html" style="align-self: flex-start; text-decoration: none; color: white;">← Back to Projects</a>  </button>
+        
+        <button class=" tech-button special-button"  > <a href="https://github.com/taulant0/Breadboard-Power-Supply/raw/main/downloads/Breadboard Power Supply.zip" style="text-decoration: none; color: white; " download>Download project</a></button>
+
+      
+
+      </div>
+      
+
+    </main>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="https://github.com/taulant0" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/taulant-shala-5b8131334/" target="_blank">LinkedIn</a>
+            
+            </div>
+            <div class="footer-copy">
+                &copy; <span id="current-year"></span> Taulant Shala. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    
+<script>
+
+
+document.addEventListener('DOMContentLoaded', function () {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navbar = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navbar.classList.toggle('active'); // Toggle the active class
+        });
+    });
+    </script>
+
+
+
+
+
+
+</body>
+</html>

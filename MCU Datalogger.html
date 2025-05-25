@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Kicad projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="led-torch.css">
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar">
+            <div class="logo">My Portfolio</div>
+            <div class="hamburger">
+            <button class="menu-toggle" aria-label="Menu">&#9776;</button> </div>
+            <ul class="nav-links">
+                <li class="list nav-button"><a href="index.html">Home</a></li>
+                <li class="list nav-button">
+                    <button class="tech-button special-button">
+                        <a href="projects.html">Projects</a>
+                    </button>
+                </li>
+                <li class="list nav-button"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+<div class="schematic">
+
+<h2>MCU Datalogger</h2>
+<p>
+
+This device collects data from sensors and stores it on a microSD card for later analysis. It is designed to help understand how microcontrollers interface with storage devices and manage data logging tasks, making it suitable for applications such as temperature monitoring, motion tracking, or environmental data collection. 
+
+The project files include the bill of materials, schematic, PCB layout, and 3D model. <br> Notably, the schematic was organized using hierarchical sheets in KiCad, which helped structure the design modularly and improve clarity.
+<br>The project was designed and managed using Git, including one schematic and two PCB layout versions: a 2-layer and a 4-layer design.
+
+</p>
+</div>   
+<div class="schematic">
+<h3 class="photo-description">Bill of Materials</h3>
+<table class="bom-table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Designator</th>
+      <th>Package</th>
+      <th>Quantity</th>
+      <th>Designation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>BT1</td><td>PinHeader_1x02_P2.54mm_Vertical</td><td>1</td><td>Battery</td></tr>
+    <tr><td>2</td><td>C1, C4</td><td>C_0805_2012Metric</td><td>2</td><td>0.1uF</td></tr>
+    <tr><td>3</td><td>C2, C3</td><td>C_0805_2012Metric</td><td>2</td><td>22pF</td></tr>
+    <tr><td>4</td><td>C5</td><td>C_0805_2012Metric</td><td>1</td><td>100nF</td></tr>
+    <tr><td>5</td><td>D1, D2</td><td>LED_0805_2012Metric</td><td>2</td><td>LED</td></tr>
+    <tr><td>6</td><td>H1, H2, H3, H4</td><td>MountingHole_2.1mm</td><td>4</td><td>MountingHole</td></tr>
+    <tr><td>7</td><td>J1, J3</td><td>PinHeader_1x04_P2.54mm_Vertical</td><td>2</td><td>Conn_01x04_Male</td></tr>
+    <tr><td>8</td><td>J2</td><td>PinHeader_1x09_P2.54mm_Vertical</td><td>1</td><td>Conn_01x09_Male</td></tr>
+    <tr><td>9</td><td>J4</td><td>PinHeader_2x03_P2.54mm_Vertical</td><td>1</td><td>Conn_02x03_Odd_Even</td></tr>
+    <tr><td>10</td><td>R1, R2, R6</td><td>R_0805_2012Metric</td><td>3</td><td>10K</td></tr>
+    <tr><td>11</td><td>R3, R4</td><td>R_0805_2012Metric</td><td>2</td><td>4.7K</td></tr>
+    <tr><td>12</td><td>R5, R7</td><td>R_0805_2012Metric</td><td>2</td><td>330</td></tr>
+    <tr><td>13</td><td>U1, U3</td><td>SOIC-8_5.23x5.23mm_P1.27mm</td><td>2</td><td>24LC1025</td></tr>
+    <tr><td>14</td><td>U2</td><td>SOIC127P600X175-8N</td><td>1</td><td>DS1337S_</td></tr>
+    <tr><td>15</td><td>U4</td><td>QFP80P900X900X120-32N</td><td>1</td><td>ATMEGA328P-AU</td></tr>
+    <tr><td>16</td><td>Y1</td><td>Crystal_SMD_5032-2Pin_5.0x3.2mm_HandSoldering</td><td>1</td><td>32.768 MHz</td></tr>
+    <tr><td>17</td><td>Y2</td><td>Crystal_SMD_5032-2Pin_5.0x3.2mm_HandSoldering</td><td>1</td><td>16 MHz</td></tr>
+  </tbody>
+</table>
+
+</div>
+
+<div class="schematic">
+            <h4 class="photo-description">Main Schematic Diagram of the MCU Datalogger</h4>
+            <img class="image-size111" src="./images/MCU Datalogger1.PNG" alt="schematic">
+        </div>
+        <div class="schematic">
+            <h4 class="photo-description">Secondary (hierarchical) Schematic Diagram of the MCU Datalogger</h4>
+            <img class="image-size111" src="./images/MCU Datalogger2.PNG" alt="schematic">
+        </div>
+        <div class="schematic">
+            <h4 class="photo-description">PCB Layout of the 2-Layer MCU Datalogger</h4>
+            <img class="image-size3" src="./images/MCU Datalogger3.PNG" alt="layout">
+        </div>
+          <div class="schematic">
+            <h4 class="photo-description">3D View (Front) of the Assembled 2-Layer MCU Datalogger</h4>
+            <img class="image-size3" src="./images/MCU Datalogger4.PNG" alt="layout">
+        </div>
+        <div class="schematic">
+            <h4 class="photo-description">3D View (Back) of the Assembled 2-Layer MCU Datalogger</h4>
+        <div class="front-3dmodel">
+            <img class="image-size3" src="./images/MCU Datalogger5.PNG" alt="front-3dmodel">
+        </div>
+        <h4 class="photo-description">PCB Layout of the 4-Layer MCU Datalogger</h4>
+        <div class="back-3dmodel">
+            <img class="image-size3" src="./images/MCU Datalogger6.PNG" alt="back-3dmodel">
+        </div>
+    </div>
+     <div class="schematic">
+            <h4 class="photo-description">3D View (Front) of the Assembled 4-Layer MCU Datalogger</h4>
+        <div class="front-3dmodel">
+            <img class="image-size3" src="./images/MCU Datalogger7.PNG" alt="front-3dmodel">
+        </div>
+        <h4 class="photo-description">3D View (Back) of the Assembled 4-Layer MCU Datalogger</h4>
+        <div class="back-3dmodel">
+            <img class="image-size3" src="./images/MCU Datalogger8.PNG" alt="back-3dmodel">
+        </div>
+    </div>
+
+
+    <div style="display: flex; justify-content: space-between; margin-top: 2rem;">
+        <button class=" tech-button special-button">
+       
+        <a href="index.html" style="align-self: flex-start; text-decoration: none; color: white;">← Back to Projects</a>  </button>
+        
+        <button class=" tech-button special-button"  > <a href="https://github.com/taulant0/MCU-Datalogger/raw/main/downloads/MCU-Datalogger.zip" style="text-decoration: none; color: white; " download>Download project</a></button>
+
+      
+
+      </div>
+      
+
+    </main>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="https://github.com/taulant0" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/taulant-shala-5b8131334/" target="_blank">LinkedIn</a>
+            
+            </div>
+            <div class="footer-copy">
+                &copy; <span id="current-year"></span> Taulant Shala. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    
+<script>
+
+
+document.addEventListener('DOMContentLoaded', function () {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navbar = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navbar.classList.toggle('active'); // Toggle the active class
+        });
+    });
+    </script>
+
+
+
+
+
+
+</body>
+</html>

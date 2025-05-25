@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Kicad projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="led-torch.css">
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar">
+            <div class="logo">My Portfolio</div>
+            <div class="hamburger">
+            <button class="menu-toggle" aria-label="Menu">&#9776;</button> </div>
+            <ul class="nav-links">
+                <li class="list nav-button"><a href="index.html">Home</a></li>
+                <li class="list nav-button">
+                    <button class="tech-button special-button">
+                        <a href="projects.html">Projects</a>
+                    </button>
+                </li>
+                <li class="list nav-button"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+<div class="schematic">
+
+<h2>LED Torch Circuit</h2>
+<p>This is a simple battery-powered torch that lights up an LED when a button is pressed. It’s a great introductory project for understanding how basic components like resistors, LEDs, and switches work together in a functional circuit. Below, you can see the bill of materials, schematic, PCB layout, and 3D model of the project.</p>
+</div>   
+<div class="schematic">
+<h3 class="photo-description">Bill of Materials</h3>
+    <table class="bom-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Designator</th>
+          <th>Package</th>
+          <th>Quantity</th>
+          <th>Designation</th>
+       
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>BT1</td><td>BatteryHolder_Keystone_1058_1x2032</td><td>1</td><td>Battery_Cell</td></tr>
+        <tr><td>2</td><td>SW1</td><td>SW_TH_Tactile_Omron_B3F-10xx</td><td>1</td><td>SW_DPST_x2</td></tr>
+        <tr><td>3</td><td>D1</td><td>LED_D5.0mm</td><td>1</td><td>LED</td></tr>
+        <tr><td>4</td><td>R1</td><td>R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal</td><td>1</td><td>R</td></tr>
+      </tbody>
+    </table>  
+</div>
+
+<div class="schematic">
+            <h4 class="photo-description">Schematic Diagram of the LED Torch</h4>
+            <img class="image-size1" src="./images/torch1.PNG" alt="schematic">
+        </div>
+        <div class="schematic">
+            <h4 class="photo-description">PCB Layout of the LED Torch</h4>
+            <img class="image-size" src="./images/torch2.PNG" alt="layout">
+        </div>
+        <div class="schematic">
+            <h4 class="photo-description">3D View (Front) of the Assembled LED Torch</h4>
+        <div class="front-3dmodel">
+            <img class="image-size" src="./images/torch3.PNG" alt="front-3dmodel">
+        </div>
+        <h4 class="photo-description">3D View (Back) of the Assembled LED Torch</h4>
+        <div class="back-3dmodel">
+            <img class="image-size" src="./images/torch4.PNG" alt="back-3dmodel">
+        </div>
+    </div>
+
+
+    <div style="display: flex; justify-content: space-between; margin-top: 2rem;">
+        <button class=" tech-button special-button">
+       
+        <a href="index.html" style="align-self: flex-start; text-decoration: none; color: white;">← Back to Projects</a>  </button>
+        
+        <button class=" tech-button special-button"  > <a href="https://github.com/taulant0/Pocket-flashlight/raw/main/downloads/torch-led.zip" style="text-decoration: none; color: white; " download>Download project</a></button>
+
+      
+
+      </div>
+      
+
+    </main>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="https://github.com/taulant0" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/taulant-shala-5b8131334/" target="_blank">LinkedIn</a>
+            
+            </div>
+            <div class="footer-copy">
+                &copy; <span id="current-year"></span> Taulant Shala. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    
+<script>
+
+
+document.addEventListener('DOMContentLoaded', function () {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navbar = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navbar.classList.toggle('active'); // Toggle the active class
+        });
+    });
+    </script>
+
+
+
+
+
+
+</body>
+</html>

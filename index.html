@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Kicad projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar">
+            <div class="logo">My Portfolio</div>
+            <div class="hamburger">
+            <button class="menu-toggle" aria-label="Menu">&#9776;</button> </div>
+            <ul class="nav-links">
+                <li class="list nav-button"><a href="index.html">Home</a></li>
+                <li class="list nav-button">
+                    <button class="tech-button special-button">
+                        <a href="projects.html">Projects</a>
+                    </button>
+                </li>
+                <li class="list nav-button"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="projects-container">
+        <div class="description">
+            <p>Thanks to <span class="span"> KiCad Like a Pro</span> by <span class="span">Dr. Peter Dalmaris</span>, I was able to learn PCB design from the ground up through a hands-on, project-based approach. The book guided me step-by-step through five practical projects, teaching me everything from schematic design to layout, footprints, design rules, 3D modeling, and generating Gerber files. All the PCB projects shown on this page were created by following the exercises in that book. By completing each project, I not only built real hardware but also gained a solid understanding of the entire KiCad workflow. This experience helped me confidently design, visualize, and prepare my own PCBs for manufacturing.</p>
+<img class="book" src="./images/book.PNG" alt="kicad book cover">    
+
+        </div>
+        <div class="projects" id="projects"></div>
+    </div>
+   
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="https://github.com/taulant0" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/taulant-shala-5b8131334/" target="_blank">LinkedIn</a>
+            
+            </div>
+            <div class="footer-copy">
+                &copy; <span id="current-year"></span> Taulant Shala. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+         const projectsData = [
+    { name: "LED Torch Circuit", description:"A beginner-friendly project that introduces basic PCB design by creating a simple LED circuit powered by a battery and controlled by a switch.",  link: "led-torch.html", backgroundImage: "url('./images/torch.PNG')" },
+    { name: "Breadboard Power Supply",description:"A compact module that fits into a breadboard and gives you 3.3V and 5V power outputs — perfect for powering small electronic experiments safely.", link:"Breadboard Power Supply.html", backgroundImage: "url('./images/breadboard-power-supply.PNG')" },
+    { name: "4x8x8 LED Matrix Clock", description:"A digital clock made from stacked LED matrices that shows the current time — a fun and visual way to learn about timekeeping and display control.", link: "4x8x8 LED Matrix Clock.html", backgroundImage: "url('./images/4x8x8 LED Matrix Clock.PNG')" },
+    { name: "MCU Datalogger", description:"A device that reads data from sensors and saves it to an SD card — ideal for tracking temperature, humidity, or other signals over time.", link: "MCU Datalogger.html", backgroundImage: "url('./images/MCU Datalogger.PNG')" },
+    {name: "ESP32 Clone Devkit",description:"A custom development board built around the ESP32 chip — it lets you run Wi-Fi and Bluetooth projects like smart home controls or IoT sensors.", link: "ESP32 Clone Devkit.html", backgroundImage: "url('./images/ESP32 Clone Devkit.PNG')" }
+   
+];
+
+const projectsContainer = document.querySelector('.projects-container .projects');
+
+projectsData.forEach((project) => {
+    const projectCard = document.createElement('div');
+    projectCard.classList.add('project-card');
+    projectCard.style.backgroundImage = project.backgroundImage;
+
+    const projectTitle = document.createElement('h3');
+    projectTitle.textContent = project.name;
+
+    const projectDescription = document.createElement('h4');
+    projectDescription.textContent = project.description;
+
+    const projectButton = document.createElement('button');
+    projectButton.textContent = 'View Project';
+    projectButton.onclick = () => {
+        window.location.href = project.link;
+    };
+
+    projectCard.appendChild(projectTitle);
+    projectCard.appendChild(projectDescription);
+    projectCard.appendChild(projectButton);
+    projectsContainer.appendChild(projectCard);
+});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navbar = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navbar.classList.toggle('active'); // Toggle the active class
+        });
+    });
+    </script>
+
+
+
+
+
+
+</body>
+</html>
