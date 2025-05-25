@@ -161,7 +161,48 @@
   padding: 0px;
 }
 
+.special-button {
+    background-color: #ff0000;
+  }
+  .tech-button {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 20px;
+  }
+  
+  .tech-button:hover {
+    background-color: #FF8C42;
+  }
 
+  .tech-button{
+    font-size: 18px;
+      padding: 5px;
+  }
+
+  .nav-button::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 50%;
+    bottom: -5px;
+    background: #FF8C42;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-button:hover::after {
+    width: 100%;
+    left: 0;
+  }
+
+
+    
 
 }
 
